@@ -3,12 +3,12 @@ export default function quick_sort(arr: number[]): number[] {
     return arr;
   }
 
-  const pvt = arr[0];
-  const sml = [];
-  const grt = [];
+  const pvt: number = arr[0];
+  const sml: number[] = [];
+  const grt: number[] = [];
 
   for (let i = 1; i <= arr.length; ++i) {
-    const val = arr[i];
+    const val: number = arr[i];
     if (val > pvt) {
       grt.push(val);
     } else if (val < pvt) {
