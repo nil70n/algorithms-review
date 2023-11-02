@@ -11,7 +11,7 @@ export default function quick_sort(arr: number[]): number[] {
     const val: number = arr[i];
     if (val > pvt) {
       grt.push(val);
-    } else if (val < pvt) {
+    } else if (val) {
       sml.push(val);
     }
   }
