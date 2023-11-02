@@ -53,16 +53,16 @@ export default class SingleLinkedList<T> {
 
   get(index: number): T | undefined {
     let curr = this._head;
-    
+
     for (let i = 0; i <= index; ++i) {
       if (!curr) {
         return undefined;
       }
-      
+
       if (i === index) {
         return curr.value;
       }
-       curr = curr.next;
+      curr = curr.next;
     }
 
     return undefined;
@@ -83,7 +83,7 @@ export default class SingleLinkedList<T> {
       return;
     }
 
-    while(curr!.next) {
+    while (curr!.next) {
       curr = curr!.next;
     }
 
@@ -108,8 +108,7 @@ export default class SingleLinkedList<T> {
     let prev = this._head;
     curr = this._head.next;
 
-
-    for (let i = 1; i <=idx; ++i) {
+    for (let i = 1; i <= idx; ++i) {
       if (!curr) {
         prev.next = node;
         return;

@@ -2,7 +2,7 @@ export default function max_value(arr: number[], curr: number | null): number {
   if (curr == null) {
     curr = -1;
   }
-  
+
   if (!arr.length) {
     return curr;
   }

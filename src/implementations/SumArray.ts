@@ -7,6 +7,6 @@ export default function sum_array(arr: number[]): number {
   if (nextVal === undefined) {
     nextVal = 0;
   }
-  
+
   return nextVal + sum_array(arr);
 }
