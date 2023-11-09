@@ -1,5 +1,3 @@
-import { FunctionLike } from "typescript";
-
 export default class MinHeap<T> {
   private _heap: T[] = [];
 
