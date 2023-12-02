@@ -4,7 +4,7 @@
   "description": "Algorithms review based on the book Grokking Algorithms",
   "main": "index.ts",
   "scripts": {
-    "test": "jest RecursiveBinarySearch",
+    "test": "jest",
     "prettier": "prettier --write ./src",
     "dev": "npx nodemon"
   },
